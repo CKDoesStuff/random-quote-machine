@@ -26,8 +26,10 @@ class QuoteWrapper extends React.Component {
                     { '\u2013 ' + this.state.author}
                 </div>
                 <div className='buttons'>
-                    <div id='tweet-quote' className='tweet'>
-                        <a href={`https://www.twitter.com/intent/tweet?text=%22${this.parseURI(this.state.quote)}%22`} target='_blank'><div className='link'>Tweet</div></a>
+                    <div className='tweet'>
+                        <a id='tweet-quote' rel='noreferrer' href={`https://www.twitter.com/intent/tweet?text=%22${this.parseURI(this.state.quote)}%22%20%2D${this.parseURI(this.state.author)}`} target='_blank'>
+                            <div className='link'>Tweet</div>
+                        </a>
                     </div>
                     <div id='new-quote' className='new-quote'>
 
