@@ -1,7 +1,8 @@
 .wrapper {
     background-color: aliceblue;
     height: 250px;
-    width: 550px;
+    width: 50vw;
+    max-width: 500px;
     border-radius: 10px;
     color: steelblue;
     display: table;
